@@ -1,0 +1,62 @@
+/* Register.css */
+
+.register-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .register-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .register-form input:focus {
+    border-color: #999;
+    outline: none;
+  }
+  
+  .register-form .btn.signup-btn {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-form .btn.signup-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  @media (max-width: 600px) {
+    .register-form {
+      padding: 15px;
+    }
+  
+    .register-form input,
+    .register-form .btn.signup-btn {
+      font-size: 14px;
+    }
+  }
+  

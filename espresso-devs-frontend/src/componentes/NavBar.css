@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+:root {
+    --main-color: #f39e00;
+    --main-bg-color: #7b5d3b; /* Nuevo color marrón para el fondo */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+body a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-bg-color); /* Cambia el color de fondo de la barra */
+    padding: 10px 12%; /* Ajusta el padding para que el logo se vea mejor */
+    transition: all 0.50s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px; /* Ajusta el tamaño del logo */
+    transition: all 0.50s ease;
+}
+
+.navbarr {
+    display: flex;
+    margin-top: 15px;
+}
+
+.navbarr a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all 0.50s ease;
+    color: #fff;
+}
+
+.navbarr a:hover {
+    color: var(--main-color);
+}
+
+.navbarr a.active {
+    color: var(--main-color);
+}
+
+.mainn {
+    display: flex;
+    align-items: center;
+}
+
+.mainn a {
+    margin-right: 15px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.50s ease;
+}
+
+.mainn a.login-btn {
+    background-color: var(--main-color); /* Cambia el color de fondo del botón Login */
+    color: #fff; /* Cambia el color del texto del botón Login */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.50s ease;
+}
+
+.mainn a.login-btn:hover {
+    background-color: #e38300; /* Cambia el color de fondo al pasar el mouse sobre el botón Login */
+    color: #fff; /* Cambia el color del texto al pasar el mouse sobre el botón Login */
+}
+
+.mainn a.signup-btn {
+    background-color: var(--main-color); /* Cambia el color de fondo del botón Inscripción */
+    color: #fff; /* Cambia el color del texto del botón Inscripción */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.50s ease;
+}
+
+.mainn a.signup-btn:hover {
+    background-color: #e38300; /* Cambia el color de fondo al pasar el mouse sobre el botón Inscripción */
+    color: #fff; /* Cambia el color del texto al pasar el mouse sobre el botón Inscripción */
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: #fff; /* Cambia el color del icono del menú */
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+section {
+    padding: 100px 12%;
+    background: #fff;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1, .content h2 {
+    font-size: 2.5rem;
+    color: var(--main-bg-color);
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.course {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.course h3 {
+    font-size: 1.5rem;
+    color: var(--main-bg-color);
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 1rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e38300;
+}
+
+@media only screen and (max-width: 1350px) {
+    header {
+        padding: 14px 2%;
+        transition: 0.2s;
+    }
+
+    .navbarr a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbarr {
+        position: absolute;
+        top: 60%;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background: var(--main-bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.50s;
+        z-index: 10000;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .navbarr.open {
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+    }
+
+    .navbarr li {
+        margin: 30px 0;
+    }
+
+    .navbarr a {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .mainn {
+        display: none;
+    }
+}

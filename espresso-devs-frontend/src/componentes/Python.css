@@ -1,0 +1,51 @@
+.App {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .sidebar{
+    height: 100%;
+    width: 250px;
+    background-color: #b4412c;
+  }
+  .sidebar-list{
+    height: auto;
+    padding: 0;
+    width: 100%;
+  
+  }
+  .sidebar-list .row:hover{
+    cursor: pointer;
+  }
+  .sidebar-list .row{
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    border: 1px solid hsl(14, 90%, 20%);
+    display: flex;
+    flex-direction: row;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  .row #icon{
+    flex: 30%;
+    display: grid;
+    place-items: center;
+  }
+  .row #title{
+    flex: 70%;
+  }
+  .content{
+    padding: 15px; 
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; 
+    text-align: center; 
+  }
